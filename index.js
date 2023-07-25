@@ -5,11 +5,10 @@ export const app = express();
 app.use(express.json());
 
 
-router.get("/",async (req, res) => {
-  
+app.get("/",async (req, res) => {
     res.send("hello world");
 });
 
-app.listen(process.env.PORT || 3003, () => {
-    console.log(`PORT work -> ${process.env.PORT || 3003}`);
+app.listen(5000, () => {
+    console.log(`PORT work -> 5000`);
 });
