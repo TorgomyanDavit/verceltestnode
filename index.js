@@ -38,7 +38,7 @@ app.get('/', async (req, res) => {
   res.send('Hello,Test!');
 });
 
-app.get('/getToken', async (req, res) => {
+app.get('/getToke', async (req, res) => {
   res.cookie('_csrf', "newCsrfToken", {
     secure: true, // It means that the cookie will only be sent over HTTPS
     httpOnly: false, // inaccessible to JavaScript on the client side.
