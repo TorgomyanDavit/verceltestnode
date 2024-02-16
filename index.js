@@ -23,7 +23,8 @@ app.use(session({
 
 app.use(cors({
   origin: [
-    'https://www.holtrinity.com'
+    'https://www.holtrinity.com',
+    "https://verselnew.vercel.app"
   ],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   credentials:true,
