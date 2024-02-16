@@ -46,7 +46,7 @@ app.get('/getToke', async (req, res) => {
   });
 
   // Send the response to the client
-  res.send({ name: 'Hello, TypeScript Express App!' });
+  res.send({ name: 'Hello, TypeScr!' });
 });
 
 
