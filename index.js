@@ -23,8 +23,7 @@ app.use(session({
 
 app.use(cors({
   origin: [
-    'https://www.holtrinity.com',
-    "https://verselnew.vercel.app"
+    'https://www.holtrinity.com'
   ],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   credentials:true,
@@ -38,7 +37,7 @@ app.get('/', async (req, res) => {
   res.send('Hello,Test!');
 });
 
-app.get('/getToke', async (req, res) => {
+app.get('/getToken', async (req, res) => {
   res.cookie('_csrf', "newCsrfToken", {
     secure: true, // It means that the cookie will only be sent over HTTPS
     httpOnly: false, // inaccessible to JavaScript on the client side.
